@@ -1,12 +1,10 @@
-import React from "react";
 import styled from "styled-components";
 
 const NavLinksContainer = styled.div`
   display: flex;
   height: 100%;
   align-items: center;
-  backgroundcolor: #666;
-`;
+ `;
 
 const LinksWrapper = styled.ul`
   display: flex;

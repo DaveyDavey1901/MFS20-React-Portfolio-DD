@@ -1,6 +1,5 @@
-import React from "react";
 import styled from "styled-components";
-import DDLogoImg from "../../assets/images/55_Hitech_Sphere.jpg";
+import DDLogoImg from "../../assets/images/sphere.png";
 
 const LogoWrapper = styled.div`
   display: flex;
@@ -8,8 +7,8 @@ const LogoWrapper = styled.div`
 `;
 
 const LogoImg = styled.div`
-  width: 29px;
-  height: 29px;
+  width: 6rem;
+  height: 5rem;
   img {
     width: 100%;
     height: 100%;
@@ -17,9 +16,9 @@ const LogoImg = styled.div`
 `;
 
 const LogoText = styled.h2`
-  font-size: 1.6rem;
+  font-size: 2rem;
   margin: 0;
-  margin-left: 4px;
+  margin-left: 1rem;
   font-weight: 500;
   color: #fdf2f2;
 `;
@@ -30,7 +29,7 @@ export function Logo(props) {
       <LogoImg>
         <img src={DDLogoImg} alt="Davids Logo" />
       </LogoImg>
-      <LogoText>David Davies Portfolio</LogoText>
+      <LogoText>David Davies</LogoText>
     </LogoWrapper>
   );
 }
