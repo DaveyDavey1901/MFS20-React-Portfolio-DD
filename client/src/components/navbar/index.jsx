@@ -1,9 +1,9 @@
 import { useMediaQuery } from "react-responsive";
 import styled from "styled-components";
-import { Logo } from "../logo";
+import { Logo } from "../Logo";
 import { NavLinks } from "./lgScreenNavLinks";
 import { Login } from "./login";
-import { DeviceSize } from "../responsive";
+import { DeviceSize } from "../Responsive";
 import { MobileLinks } from "./mobileNavLinks";
 
 const NavbarContainer = styled.div`

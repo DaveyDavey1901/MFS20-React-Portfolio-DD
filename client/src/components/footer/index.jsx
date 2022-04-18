@@ -23,8 +23,7 @@ const FooterLeft = styled.div`
 const FooterMiddle = styled.div`
   display: flex;
   flex: 2;
-  height: 100%;
-  justify-content: center;
+  
 `;
 const FooterRight = styled.div`
   display: flex;
