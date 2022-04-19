@@ -1,6 +1,6 @@
 import { useMediaQuery } from "react-responsive";
 import styled from "styled-components";
-import { Logo } from "../Logo";
+import { Logo } from "../Shared/Logo";
 import { NavLinks } from "./lgScreenNavLinks";
 import { Login } from "./login";
 import { DeviceSize } from "../Responsive";
@@ -10,6 +10,7 @@ const NavbarContainer = styled.div`
   display: flex;
   width: 100%;
   height: 6rem;
+  margin-bottom: 5%;
   padding: 0 1.5em;
   align-items: center;
   background-color: rgba(7, 27, 69, 0.9);

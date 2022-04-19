@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import DDLogoImg from "../../assets/images/sphere.png";
+import DDLogoImg from "../../Assets/Img/sphere.png";
 
 const LogoWrapper = styled.div`
   display: flex;

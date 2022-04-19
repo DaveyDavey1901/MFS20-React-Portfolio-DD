@@ -60,6 +60,9 @@ export function MobileLinks(props) {
             <Link href="#">About Me</Link>
           </LinkItem>
           <LinkItem>
+            <Link href="#">Featured Projects</Link>
+          </LinkItem>
+          <LinkItem>
             <Link href="#">Projects</Link>
           </LinkItem>
           <LinkItem>

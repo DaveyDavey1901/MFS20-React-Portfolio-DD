@@ -1,7 +1,5 @@
 import styled from "styled-components";
 
-
-
 const FooterContainer = styled.div`
   display: flex;
   width: 100%;
@@ -23,7 +21,6 @@ const FooterLeft = styled.div`
 const FooterMiddle = styled.div`
   display: flex;
   flex: 2;
-  
 `;
 const FooterRight = styled.div`
   display: flex;
@@ -31,18 +28,11 @@ const FooterRight = styled.div`
 `;
 
 export function Footer(props) {
-  
   return (
     <FooterContainer>
-      
-      <FooterLeft>
-              </FooterLeft>
-      <FooterMiddle>
-
-      </FooterMiddle>
-      <FooterRight>
-        
-      </FooterRight>
+      <FooterLeft></FooterLeft>
+      <FooterMiddle></FooterMiddle>
+      <FooterRight></FooterRight>
     </FooterContainer>
   );
 }

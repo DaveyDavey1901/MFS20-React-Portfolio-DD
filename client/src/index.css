@@ -3,8 +3,9 @@
 
 html {
   font-size: 62.5%;
-  background: #071b45 url("../src/assets/images/blue-neon.webp") no-repeat center fixed;
+  background: #071b45 url("../src/Assets/Img/blue-neon.webp") no-repeat center fixed;
   background-size: cover;
+  
 }
 
 body {
@@ -15,6 +16,7 @@ body {
   color: #fdf2f2;
   overflow-x: hidden;
   scroll-behavior: smooth;
+  
 }
 
 *:focus {
