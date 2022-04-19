@@ -9,7 +9,23 @@ const HeroDiv = styled.div`
   align-items: center;
   text-align: center;
   justify-content: center;
-  
+`;
+
+const HeroText = styled.div`
+  margin: 0 4rem;
+`;
+
+const BrandStatement = styled.p`
+  font-size: 1.6rem;
+  text-align: justify;
+  text-justify: inter-word;
+`;
+
+const Hlight = styled.span`
+  color: #00c9fc;
+`;
+const TitleName = styled.span`
+  font-size:2.4rem;
 `;
 
 const Img = styled.img`
@@ -18,15 +34,6 @@ const Img = styled.img`
   justify-content: center;
   max-width: 100%;
   max-height: 100%;
-`;
-
-const BrandStatement = styled.p`
-  font-size: 1.2rem;
-  text-align: justify;
-  text-justify: inter-word;
-`;
-const Hlight = styled.span`
-  color: #ffdd19;
 `;
 
 const ImgFrame = styled.div`
@@ -41,20 +48,15 @@ const ImgFrame = styled.div`
   max-width: 50rem;
 `;
 
-const HeroText = styled.div`
-margin: 0 4rem;
-
-`
-
 export function HeroSection() {
   return (
     <HeroDiv>
       <Container>
         <Flex>
           <HeroText>
-            <h1>
+            <TitleName>
               Hello I'm <Hlight>DAVID DAVIES</Hlight>
-            </h1>
+            </TitleName>
 
             <BrandStatement>
               I'm a <Hlight>Front End Developer</Hlight> with drive and passion
@@ -74,11 +76,10 @@ export function HeroSection() {
             </a>
           </HeroText>
         </Flex>
-          <ImgFrame>
-            <Img src={DDAvatarImg} alt="David Davies" />
-          </ImgFrame>
+        <ImgFrame>
+          <Img src={DDAvatarImg} alt="David Davies" />
+        </ImgFrame>
       </Container>
     </HeroDiv>
   );
 }
-

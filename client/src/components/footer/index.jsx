@@ -1,10 +1,10 @@
 import styled from "styled-components";
+import {SocialIcons} from "../Shared/SocialIcons";
 
 const FooterContainer = styled.div`
   display: flex;
   width: 100%;
   height: 6rem;
-  padding-top: 2rem;
   align-items: center;
   background-color: rgba(7, 27, 69, 0.9);
   border-top: 1px solid #ffdd19;
@@ -32,7 +32,7 @@ export function Footer(props) {
     <FooterContainer>
       <FooterLeft></FooterLeft>
       <FooterMiddle></FooterMiddle>
-      <FooterRight></FooterRight>
+      <FooterRight><SocialIcons /></FooterRight>
     </FooterContainer>
   );
 }
