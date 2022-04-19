@@ -39,9 +39,9 @@ export const Button = styled.button`
 export const LoginButton = styled.button`
   border: 0;
   outline: 0;
-  padding: 0.6rem 3rem;
+  padding: 0.6rem 1rem;
   color: #fdf2f2;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 600;
   border-radius: 12px;
   margin-left: 2rem;

@@ -26,6 +26,12 @@ const MySocialIcons = styled.div`
     width: 2.4rem;
     color: #ffdd19;
     text-decoration: none;
+
+    cursor: pointer;
+    &:hover {
+      color: #00c9fc;
+      border-bottom: 2px solid #ffdd19;
+    }
   }
 `;
 export function SocialIcons() {
