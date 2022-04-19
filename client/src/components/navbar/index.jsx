@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { Logo } from "../Shared/Logo";
 import { NavLinks } from "./lgScreenNavLinks";
 import { Login } from "./login";
-import { DeviceSize } from "../Responsive";
+import { ThemeSize } from "../Responsive";
 import { MobileLinks } from "./mobileNavLinks";
 
 const NavbarContainer = styled.div`
@@ -33,7 +33,7 @@ const NavbarRight = styled.div`
 `;
 
 export function Navbar(props) {
-  const isMobile = useMediaQuery({ maxWidth: DeviceSize.mobile });
+  const isMobile = useMediaQuery({ maxWidth: ThemeSize.mobile });
 
   return (
     <NavbarContainer>

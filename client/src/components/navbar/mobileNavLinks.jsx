@@ -15,7 +15,7 @@ const LinksWrapper = styled.ul`
   display: flex;
   height: 100%;
   list-style: none;
-  background-color: rgba(7, 27, 69, 0.9);
+  background-color: rgba(7, 27, 69);
   width: 100%;
   flex-direction: column;
   position: fixed;
@@ -37,7 +37,8 @@ const LinkItem = styled.li`
   border-bottom: 2px solid transparent;
   transition: all 220ms ease-in-out;
   &:hover {
-    border-bottom: 2px solid #ffdd19;
+    border-bottom: 1px solid #ffdd19;
+       
     color: #00c9fc;
   }
 `;

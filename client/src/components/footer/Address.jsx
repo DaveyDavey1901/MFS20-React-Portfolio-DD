@@ -17,6 +17,7 @@ const MyAddress = styled.div`
 
 const Hlight = styled.span`
   color: #ffdd19;
+  margin: 0 1rem;
 `;
 
 export function Address() {

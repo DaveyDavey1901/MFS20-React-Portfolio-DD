@@ -45,7 +45,7 @@ const ImgFrame = styled.div`
   overflow-y: hidden;
   margin: 1rem;
   max-height: 30rem;
-  max-width: 50rem;
+  max-width: 25rem;
 `;
 
 export function HeroSection() {
@@ -75,10 +75,10 @@ export function HeroSection() {
               <Button>Resume / CV</Button>
             </a>
           </HeroText>
-        </Flex>
         <ImgFrame>
           <Img src={DDAvatarImg} alt="David Davies" />
         </ImgFrame>
+        </Flex>
       </Container>
     </HeroDiv>
   );

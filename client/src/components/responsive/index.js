@@ -1,6 +1,6 @@
-export const DeviceSize = {
-  mobile: 768,
-  tablet: 992,
-  laptop: 1324,
-  desktop: 2024,
+export const ThemeSize = {
+  mobile: "768px",
+  tablet: "992px",
+  laptop: "1324px",
+  desktop: "2024px",
 };
