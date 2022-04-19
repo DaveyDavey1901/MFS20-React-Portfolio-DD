@@ -57,16 +57,16 @@ export function MobileLinks(props) {
       {isOpen && (
         <LinksWrapper>
           <LinkItem>
-            <Link href="#">About us</Link>
+            <Link href="#">About Me</Link>
           </LinkItem>
           <LinkItem>
-            <Link href="#">How it works</Link>
+            <Link href="#">Projects</Link>
           </LinkItem>
           <LinkItem>
-            <Link href="#">Explore</Link>
+            <Link href="#">Contact</Link>
           </LinkItem>
           <LinkItem>
-            <Link href="#">Impact</Link>
+            <Link href="#">Blog</Link>
           </LinkItem>
           <Login />
         </LinksWrapper>

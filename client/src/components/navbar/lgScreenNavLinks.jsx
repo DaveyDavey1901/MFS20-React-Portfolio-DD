@@ -4,7 +4,7 @@ const NavLinksContainer = styled.div`
   display: flex;
   height: 100%;
   align-items: center;
- `;
+`;
 
 const LinksWrapper = styled.ul`
   display: flex;
@@ -24,7 +24,7 @@ const LinkItem = styled.li`
   font-size: 1.6rem;
   align-items: center;
   justify-content: center;
-  
+
   border-top: 2px solid transparent;
   transition: all 220ms ease-in-out;
   &:hover {
