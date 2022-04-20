@@ -10,6 +10,7 @@ import { AboutMe } from "./Pages/AboutMe";
 import { Projects } from "./Pages/Projects";
 import { Contact } from "./Pages/Contact";
 import { Blog } from "./Pages/Blog";
+import { Login} from "./Pages/Login";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/projects" element={<Projects />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/login" element={<Login />} />
         </Routes>
       <Footer />
       </BrowserRouter>

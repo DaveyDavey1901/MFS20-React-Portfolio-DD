@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import {LoginButton} from '../Shared/Button'
+import { useNavigate } from "react-router-dom";
 
 const LoginContainer = styled.div`
   display: flex;
@@ -8,9 +9,10 @@ const LoginContainer = styled.div`
 `;
 
 export function Login(props) {
+  const navigate = useNavigate();
   return (
     <LoginContainer>
-       <LoginButton>Login</LoginButton>
+       <LoginButton onClick={() => navigate('/login')}>Login</LoginButton>
     </LoginContainer>
   );
 }
