@@ -5,17 +5,17 @@ html {
   font-size: 62.5%;
   background: #071b45 url("../src/Assets/Img/blue-neon.webp") no-repeat center fixed;
   background-size: cover;
-  
-}
+  }
 
 body {
-  margin: 0;
+  margin: 0 auto;
   font-family: "Roboto", sans-serif;
   line-height: 1.5;
   font-weight: 500;
   color: #fdf2f2;
   overflow-x: hidden;
   scroll-behavior: smooth;
+  
   
 }
 

@@ -20,10 +20,10 @@ const LinkItem = styled.li`
   padding: 0 1.1em;
 
   font-weight: 500;
-  color: #fdf2f2;
   font-size: 1.6rem;
   align-items: center;
   justify-content: center;
+  text-align:center;
 
   border-top: 2px solid transparent;
   transition: all 220ms ease-in-out;

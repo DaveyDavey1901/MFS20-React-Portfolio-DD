@@ -20,7 +20,7 @@ const LogoText = styled.h2`
   margin: 0;
   margin-left: 1rem;
   font-weight: 500;
-  color: #fdf2f2;
+  
 `;
 
 export function Logo(props) {
@@ -29,7 +29,7 @@ export function Logo(props) {
       <LogoImg>
         <img src={DDLogoImg} alt="Davids Logo" />
       </LogoImg>
-      <LogoText>David Davies</LogoText>
+      <LogoText>DD Portfolio</LogoText>
     </LogoWrapper>
   );
 }

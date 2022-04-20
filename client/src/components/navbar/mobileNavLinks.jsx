@@ -28,7 +28,6 @@ const LinkItem = styled.li`
   align-items: center;
   justify-content: center;
   padding: 1rem;
-  color: #fdf2f2;
   font-weight: 500;
   font-size: 2.4rem;
   display: flex;
