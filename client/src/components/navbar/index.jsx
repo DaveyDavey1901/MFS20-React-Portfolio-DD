@@ -1,7 +1,7 @@
 import { useMediaQuery } from "react-responsive";
 import styled from "styled-components";
 import { Logo } from "../Shared/Logo";
-import { NavLinks } from "./lgScreenNavLinks";
+import { NavLinks } from "./navLinks";
 import { Login } from "./login";
 import { ThemeSize } from "../Responsive";
 import { MobileLinks } from "./mobileNavLinks";

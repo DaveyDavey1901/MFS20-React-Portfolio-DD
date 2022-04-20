@@ -3,6 +3,7 @@ import { Container } from "../Shared/Container";
 import { Flex } from "../Shared/Flex";
 import { Button, ButtonCta } from "../Shared/Button";
 import DDAvatarImg from "../../Assets/Img/100kprofile.jpg";
+import { useNavigate, } from "react-router-dom";
 
 const HeroDiv = styled.div`
   display: flex;
@@ -22,7 +23,7 @@ const BrandStatement = styled.p`
 `;
 
 const Hlight = styled.span`
-  color: #00c9fc;
+  color: var(--light-blue);
 `;
 const TitleName = styled.span`
   font-size:2.4rem;
@@ -40,7 +41,7 @@ const ImgFrame = styled.div`
   display: flex;
   align-items: center;
   border-radius: 12px;
-  border: 2px solid #00c9fc;
+  border: 2px solid var(--light-blue);
   overflow-x: hidden;
   overflow-y: hidden;
   margin: 1rem;
@@ -49,6 +50,8 @@ const ImgFrame = styled.div`
 `;
 
 export function HeroSection() {
+  const navigate = useNavigate();
+  
   return (
     <HeroDiv>
       <Container>
@@ -70,7 +73,7 @@ export function HeroSection() {
               University Boot Camp where I earned a certificate.
             </BrandStatement>
 
-            <ButtonCta>Contact Me</ButtonCta>
+            <ButtonCta onClick={() => navigate('/contact')}>Contact Me</ButtonCta>
             <a href="https://docs.google.com/document/d/1kf54GtaBC2gDp3jtTX_yXzQcgtsTBntTN-IeMRnBCM4/edit?usp=sharing">
               <Button>Resume / CV</Button>
             </a>
