@@ -43,50 +43,38 @@ const LinkItem = styled.li`
   }
 `;
 
-const linkStyle = {
-  textDecoration: "none",
-  color: "inherit",
-  fontSize: "inherit",
-};
+const StyledLink = styled(Link)`
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit;
+`;
 
 export function MobileLinks(props) {
   const [isOpen, setOpen] = useState(false);
 
   return (
     <NavLinksContainer>
-     
       <MenuToggle isOpen={isOpen} toggle={() => setOpen(!isOpen)} />
       {isOpen && (
         <LinksWrapper>
           <LinkItem>
-            <Link to="/" style={linkStyle}>
-              Home
-            </Link>
+            <StyledLink to="/">Home</StyledLink>
           </LinkItem>
           <LinkItem>
-            <Link to="/about" style={linkStyle}>
-              About Me
-            </Link>
+            <StyledLink to="/about">About Me</StyledLink>
           </LinkItem>
           <LinkItem>
-            <Link to="/projects" style={linkStyle}>
-              Projects
-            </Link>
+            <StyledLink to="/projects">Projects</StyledLink>
           </LinkItem>
           <LinkItem>
-            <Link to="/contact" style={linkStyle}>
-              Contact
-            </Link>
+            <StyledLink to="/contact">Contact</StyledLink>
           </LinkItem>
           <LinkItem>
-            <Link to="/blog" style={linkStyle}>
-              Blog
-            </Link>
+            <StyledLink to="/blog">Blog</StyledLink>
           </LinkItem>
           <Login />
         </LinksWrapper>
       )}
-    
     </NavLinksContainer>
   );
 }

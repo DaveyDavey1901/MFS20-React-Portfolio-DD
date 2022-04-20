@@ -24,7 +24,7 @@ const LinkItem = styled.li`
   font-size: 1.6rem;
   align-items: center;
   justify-content: center;
-  text-align:center;
+  text-align: center;
 
   border-top: 2px solid transparent;
   transition: all 220ms ease-in-out;
@@ -33,44 +33,32 @@ const LinkItem = styled.li`
   }
 `;
 
-const linkStyle = {
-  textDecoration: "none",
-  color: "inherit",
-  fontSize: "inherit",
-}
+const StyledLink = styled(Link)`
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit;
+`;
 
 export function NavLinks(props) {
   return (
-     
     <NavLinksContainer>
-        <LinksWrapper>
-          <LinkItem>
-            <Link to="/" style={linkStyle}>
-              Home
-            </Link>
-          </LinkItem>
-          <LinkItem>
-            <Link to="/about" style={linkStyle}>
-              About Me
-            </Link>
-          </LinkItem>
-          <LinkItem>
-            <Link to="/projects" style={linkStyle}>
-              Projects
-            </Link>
-          </LinkItem>
-          <LinkItem>
-            <Link to="/contact" style={linkStyle}>
-              Contact
-            </Link>
-          </LinkItem>
-          <LinkItem>
-            <Link to="/blog" style={linkStyle}>
-              Blog
-            </Link>
-          </LinkItem>
-        </LinksWrapper>
+      <LinksWrapper>
+        <LinkItem>
+          <StyledLink to="/">Home</StyledLink>
+        </LinkItem>
+        <LinkItem>
+          <StyledLink to="/about">About Me</StyledLink>
+        </LinkItem>
+        <LinkItem>
+          <StyledLink to="/projects">Projects</StyledLink>
+        </LinkItem>
+        <LinkItem>
+          <StyledLink to="/contact">Contact</StyledLink>
+        </LinkItem>
+        <LinkItem>
+          <StyledLink to="/blog">Blog</StyledLink>
+        </LinkItem>
+      </LinksWrapper>
     </NavLinksContainer>
-      
   );
 }
