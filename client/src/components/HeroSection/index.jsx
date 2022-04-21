@@ -23,7 +23,7 @@ const BrandStatement = styled.p`
 `;
 
 const Hlight = styled.span`
-  color: var(--light-blue);
+  color: #00c9fc;
 `;
 const TitleName = styled.span`
   font-size:2.4rem;
@@ -41,7 +41,7 @@ const ImgFrame = styled.div`
   display: flex;
   align-items: center;
   border-radius: 12px;
-  border: 2px solid var(--light-blue);
+  border: 2px solid #00c9fc;
   overflow-x: hidden;
   overflow-y: hidden;
   margin: 1rem;

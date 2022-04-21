@@ -1,8 +1,16 @@
+import {PageHeading} from "../components/Shared/PageHeading";
+import { Container } from "../components/Shared/Container";
+
+
 export function AboutMe() {
   return (
-    <div className="content">
-      <h1>About ME</h1>
-      
-    </div>
+    <>
+      <Container>
+        <PageHeading
+          title={"About Me"}
+          pageDetails={`David Davies - Full Stack Web Developer`}
+        />
+      </Container>
+    </>
   );
 }

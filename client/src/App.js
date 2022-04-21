@@ -12,6 +12,9 @@ import { Contact } from "./Pages/Contact";
 import { Blog } from "./Pages/Blog";
 import { Login} from "./Pages/Login";
 
+
+
+
 function App() {
   return (
     <ThemeProvider theme={ThemeSize}>
