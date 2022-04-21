@@ -10,7 +10,6 @@ const NavbarContainer = styled.div`
   display: flex;
   width: 100%;
   height: 6rem;
-  margin-bottom: 5%;
   padding: 0 1.5em;
   align-items: center;
   background-color: rgba(7, 27, 69, 0.9);
@@ -19,17 +18,18 @@ const NavbarContainer = styled.div`
 
 const NavbarLeft = styled.div`
   display: flex;
-  margin-right: 4rem;
+  margin: 0;
 `;
 const NavbarMiddle = styled.div`
   display: flex;
   flex: 2;
   height: 100%;
   justify-content: center;
+  margin-right: 2rem;
 `;
 const NavbarRight = styled.div`
   display: flex;
-  margin-right: 4rem;
+  margin: 4rem;
 `;
 
 export function Navbar(props) {

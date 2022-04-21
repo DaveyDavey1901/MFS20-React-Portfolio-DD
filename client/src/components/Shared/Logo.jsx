@@ -4,6 +4,7 @@ import DDLogoImg from "../../Assets/Img/sphere.png";
 const LogoWrapper = styled.div`
   display: flex;
   align-items: center;
+  margin-right: 4rem;
 `;
 
 const LogoImg = styled.div`
@@ -29,7 +30,7 @@ export function Logo(props) {
       <LogoImg>
         <img src={DDLogoImg} alt="Davids Logo" />
       </LogoImg>
-      <LogoText>DD Portfolio</LogoText>
+      <LogoText>Portfolio</LogoText>
     </LogoWrapper>
   );
 }

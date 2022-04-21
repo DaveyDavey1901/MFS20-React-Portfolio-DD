@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 const NavLinksContainer = styled.div`
   display: flex;
+  flex: center;
   height: 100%;
   align-items: center;
 `;
@@ -25,11 +26,12 @@ const LinkItem = styled.li`
   align-items: center;
   justify-content: center;
   text-align: center;
-
+  
   border-top: 2px solid transparent;
-  transition: all 220ms ease-in-out;
+  transition: all 240ms ease-in-out;
   &:hover {
     border-top: 2px solid #ffdd19;
+   
   }
 `;
 
@@ -37,6 +39,9 @@ const StyledLink = styled(Link)`
   text-decoration: none;
   color: inherit;
   font-size: inherit;
+  &:hover {
+    color: #00c9fc;
+  }
 `;
 
 export function NavLinks(props) {

@@ -1,13 +1,13 @@
 import styled from "styled-components";
 
 export const ButtonCta = styled.button`
-  border-radius: 50px;
+  border-radius: 12px;
   border: none;
   margin: 1rem;
   cursor: pointer;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-weight: 700;
-  padding: 1rem 2rem;
+  padding: 1rem ;
   background-color: #ffdd19;
   color: #071b45;
   border: 0.1rem solid #071b45;
@@ -19,13 +19,13 @@ export const ButtonCta = styled.button`
 `;
 
 export const Button = styled.button`
-  border-radius: 50px;
+  border-radius: 12px;
   border: none;
   margin: 1rem;
   cursor: pointer;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-weight: 700;
-  padding: 1rem 2rem;
+  padding: 1rem ;
   background-color: #fdf2f2;
   color: #071b45;
   border: 0.1rem solid #071b45;

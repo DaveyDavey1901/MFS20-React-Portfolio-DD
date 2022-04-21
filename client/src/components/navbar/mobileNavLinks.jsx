@@ -8,6 +8,7 @@ const NavLinksContainer = styled.div`
   height: 100%;
   display: flex;
   align-items: center;
+  z-index: 99;
 `;
 
 const LinksWrapper = styled.ul`
@@ -35,11 +36,9 @@ const LinkItem = styled.li`
   margin-bottom: 1rem;
 
   border-bottom: 2px solid transparent;
-  transition: all 220ms ease-in-out;
+  transition: all 240ms ease-in-out;
   &:hover {
-    border-bottom: 1px solid #ffdd19;
-       
-    color: #00c9fc;
+    border-bottom: 2px solid #00c9fc;
   }
 `;
 
@@ -47,6 +46,9 @@ const StyledLink = styled(Link)`
   text-decoration: none;
   color: inherit;
   font-size: inherit;
+  &:hover {
+    color: #ffdd19;
+  }
 `;
 
 export function MobileLinks(props) {
@@ -54,27 +56,39 @@ export function MobileLinks(props) {
 
   return (
     <NavLinksContainer>
+     
       <MenuToggle isOpen={isOpen} toggle={() => setOpen(!isOpen)} />
       {isOpen && (
         <LinksWrapper>
-          <LinkItem>
-            <StyledLink to="/">Home</StyledLink>
+             <LinkItem>
+            <StyledLink to="/" >
+              Home
+            </StyledLink>
           </LinkItem>
           <LinkItem>
-            <StyledLink to="/about">About Me</StyledLink>
+            <StyledLink to="/about">
+              About Me
+            </StyledLink>
           </LinkItem>
           <LinkItem>
-            <StyledLink to="/projects">Projects</StyledLink>
+            <StyledLink to="/projects">
+              Projects
+            </StyledLink>
           </LinkItem>
           <LinkItem>
-            <StyledLink to="/contact">Contact</StyledLink>
+            <StyledLink to="/contact">
+              Contact
+            </StyledLink>
           </LinkItem>
           <LinkItem>
-            <StyledLink to="/blog">Blog</StyledLink>
+            <StyledLink to="/blog">
+              Blog
+            </StyledLink>
           </LinkItem>
           <Login />
         </LinksWrapper>
       )}
+    
     </NavLinksContainer>
   );
 }

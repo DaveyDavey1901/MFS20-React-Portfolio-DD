@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { SocialIcons } from "../Shared/SocialIcons";
-import {Address} from './Address'
+import { Address } from "./Address";
+
 const FooterContainer = styled.div`
   display: flex;
   max-width: 100%;
@@ -27,14 +28,12 @@ const FooterRight = styled.div`
   margin-right: 4rem;
 `;
 
-
-
 export function Footer(props) {
   return (
     <FooterContainer>
       <FooterLeft>
         <Address />
-              </FooterLeft>
+      </FooterLeft>
       <FooterMiddle></FooterMiddle>
       <FooterRight>
         <SocialIcons />

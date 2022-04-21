@@ -10,6 +10,8 @@ const HeroDiv = styled.div`
   align-items: center;
   text-align: center;
   justify-content: center;
+  width: 100vw;
+  height: 80vh;
 `;
 
 const HeroText = styled.div`

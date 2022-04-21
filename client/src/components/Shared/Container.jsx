@@ -8,13 +8,9 @@ export const Container = styled.div`
   border: 1px solid #ffdd19;
   border-radius: 12px;
   padding: 2rem;
-  margin: auto;
+  margin: 2rem auto;
   max-width: 100rem;
 
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
-  z-index: -1000;
+  
+  
 `;
