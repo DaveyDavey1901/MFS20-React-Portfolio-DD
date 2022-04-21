@@ -1,17 +1,24 @@
-import {PageHeading} from "../components/Shared/PageHeading";
-import { Container } from "../components/Shared/Container";
+import styled from "styled-components";
+import { PageHeading } from "../components/Shared/PageHeading";
+
+const BlogContainer = styled.div`
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 100vw;
+  height: 80vh;
+`;
 
 export function Blog() {
   return (
-    <>
-      <Container>
-        <PageHeading
-          title={"Blog"}
-          pageDetails={
-            "This page will be where my tech blog will be rendered when complete."
-          }
-        />
-      </Container>
-    </>
+    <BlogContainer>
+      <PageHeading
+        title={"Blog"}
+        pageDetails={
+          <p>WORK IN PROGRESS <br /> This page will be where my tech blog will be rendered when complete.</p>
+        }
+      />
+    </BlogContainer>
   );
 }
