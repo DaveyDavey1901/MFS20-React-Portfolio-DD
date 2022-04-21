@@ -4,33 +4,33 @@ const HeadingContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
-  margin: 0 0 5rem 0;
+  max-width: 100rem;
+  margin: 2rem 0 1rem 0;
+  padding: 2rem;
+  background-color: rgba(7, 27, 69, 0.4);
+  border-radius: 8px;
 `;
 
 const PageTitle = styled.div`
-  font-size: 48px;
-  color: #fff;
+  font-size: 2.8rem;
+  margin-top: 1rem;
 `;
 
-const SeperatorContainer = styled.div`
+const SeperatorLine = styled.div`
   display: flex;
   align-items: center;
-  position: relative;
-  width: 180px;
-  margin: 10px 0 0 0;
-`;
-const SeperatorLine = styled.div`
-  width: 100%;
+  width: 18rem;
+  margin: 1rem;
+  width: 80%;
   height: 2px;
-  background-color: Yellow;
+  background-color: #00c9fc;
 `;
+
 const PageDetails = styled.div`
   letter-spacing: 3px;
   margin: 8px 0 18px 0;
-  font-size: 1.6rem;
-  color: #fff;
-`;
+  font-size: 2rem;
+  `;
 
 export function PageHeading(props) {
   return (
@@ -39,11 +39,7 @@ export function PageHeading(props) {
         <span>{props.title}</span>
       </PageTitle>
 
-      <SeperatorContainer>
-        <SeperatorLine>
-          <div></div>
-        </SeperatorLine>
-      </SeperatorContainer>
+      <SeperatorLine></SeperatorLine>
 
       {props.pageDetails ? (
         <PageDetails>
