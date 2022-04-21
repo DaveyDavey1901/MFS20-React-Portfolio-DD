@@ -7,8 +7,9 @@ const ContactContainer = styled.div`
   align-items: center;
   text-align: center;
   justify-content: center;
-  width:100vw;
-  height:80vh;
+  width: 100vw;
+  height: 80vh;
+  
 `;
 
 const FormWrapper = styled.div`
@@ -18,12 +19,12 @@ const FormWrapper = styled.div`
   border: 1px solid #ffdd19;
   border-radius: 12px;
   max-width: 70rem;
-  
-  
+  overflow-x: hidden;
+
   @media (max-width: ${({ theme }) => theme.mobile}) {
     flex-direction: column;
     text-align: center;
-    margin:4rem;
+    margin: 4rem;
     padding: 1rem;
   }
 `;
@@ -37,6 +38,7 @@ const Form = styled.form`
   font-weight: 500;
   background-color: rgba(7, 27, 69, 0.9);
   border-left: 1px solid #ffdd19;
+ 
 
   @media (max-width: ${({ theme }) => theme.mobile}) {
     border-top: 1px solid #ffdd19;
@@ -89,7 +91,8 @@ const Label = styled.label`
 
 const Img = styled.img`
   width: 100%;
-  height:100%;
+  height: 100%;
+  
 `;
 
 const P = styled.p`
