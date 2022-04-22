@@ -52,10 +52,14 @@ export function NavLinks(props) {
           <StyledLink to="/">Home</StyledLink>
         </LinkItem>
         <LinkItem>
-          <StyledLink to="/about">About Me</StyledLink>
+          <StyledLink to="/about">
+            About Me
+            <br />
+            Resume
+          </StyledLink>
         </LinkItem>
         <LinkItem>
-          <StyledLink to="/projects">Projects</StyledLink>
+          <StyledLink to="/portfolio">Portfolio</StyledLink>
         </LinkItem>
         <LinkItem>
           <StyledLink to="/contact">Contact</StyledLink>
