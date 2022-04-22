@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import { ButtonCta } from "../components/Shared/Button";
 import contactmeImg from "../Assets/Img/contactme.jpeg";
+import { useState } from "react";
+import { validateEmail } from "../components/Utils/helpers";
 
 const ContactContainer = styled.div`
   display: flex;
@@ -9,7 +11,6 @@ const ContactContainer = styled.div`
   justify-content: center;
   width: 100vw;
   height: 80vh;
-  
 `;
 
 const FormWrapper = styled.div`
@@ -38,7 +39,6 @@ const Form = styled.form`
   font-weight: 500;
   background-color: rgba(7, 27, 69, 0.9);
   border-left: 1px solid #ffdd19;
- 
 
   @media (max-width: ${({ theme }) => theme.mobile}) {
     border-top: 1px solid #ffdd19;
@@ -68,8 +68,7 @@ const Textarea = styled.textarea`
   margin-bottom: -2rem;
 
   @media (max-width: ${({ theme }) => theme.mobile}) {
-   
-    width:36rem;
+    width: 36rem;
   }
 `;
 
@@ -81,7 +80,6 @@ const Input = styled.input`
   font-size: 1.1rem;
   transition: 0.3s;
   border-radius: 8px;
-  
 `;
 
 const Label = styled.label`
@@ -92,50 +90,105 @@ const Label = styled.label`
 const Img = styled.img`
   width: 100%;
   height: 100%;
-  
 `;
 
 const P = styled.p`
-margin: 1rem;
-`
+  margin: 1rem;
+`;
+const ErrorMsg = styled.p`
+  color: red;
+  font-size: 1.4rem;
+`;
+
 export function Contact() {
+  // state variables for the fields in the form and setting them to an empty string
+  const [email, setEmail] = useState("");
+  const [userName, setUserName] = useState("");
+  const [myMsg, setMyMsg] = useState("");
+  const [errorMessage, setErrorMessage] = useState("");
+
+  const handleInputChange = (e) => {
+    // Getting the value and name of the input from any changes
+    const { target } = e;
+    const inputType = target.name;
+    const inputValue = target.value;
+
+    // Based on the input type, we set the state of either email, username, and message
+    if (inputType === "email") {
+      setEmail(inputValue);
+    } else if (inputType === "userName") {
+      setUserName(inputValue);
+    } else {
+      setMyMsg(inputValue);
+    }
+  };
+
+  const handleFormSubmit = (e) => {
+    // Preventing the default behavior of the form submit
+    e.preventDefault();
+
+    // First we check to see if the email is not valid or if the
+    if (!validateEmail(email)) {
+      setErrorMessage("Please Enter Valid Email");
+      return;
+    }
+
+    alert(`${userName} Your message has been sent.`);
+
+    // clear out the input after message is sent successfully.
+    setEmail("");
+    setUserName("");
+    setMyMsg("");
+    setErrorMessage("");
+  };
+
   return (
     <ContactContainer>
       <FormWrapper>
         <TextInfo>
           <Img src={contactmeImg} alt="mail background" />
+          <p>Hello {userName}</p>
           <P>
             Please feel free to get in touch with me if you have any questions.
           </P>
+
           <Img src={contactmeImg} alt="mail background" />
         </TextInfo>
 
         <Form action="https://submit-form.com/VYOGDzCJ">
-          <Label htmlFor="name">Name</Label>
+          <Label htmlFor="userName">Name</Label>
           <Input
+            value={userName}
+            name="userName"
+            onChange={handleInputChange}
             type="text"
-            id="name"
-            name="name"
-            placeholder="Name"
-            required=""
+            placeholder="First / Last Name"
           />
-          <Label htmlFor="email">Email</Label>
+          <Label htmlFor="email">Email:</Label>
           <Input
-            type="email"
-            id="email"
+            value={email}
             name="email"
-            placeholder="Email"
-            required=""
+            onChange={handleInputChange}
+            type="email"
+            placeholder="email"
           />
-          <Label htmlFor="message">Message</Label>
+          {errorMessage && (
+            <div>
+              <ErrorMsg>{errorMessage}</ErrorMsg>
+            </div>
+          )}
+          <Label htmlFor="myMsg">Message</Label>
           <Textarea
-            id="message"
-            name="message"
+            id="myMsg"
+            value={myMsg}
+            name="myMsg"
+            onChange={handleInputChange}
             placeholder="Message"
-            required=""
           ></Textarea>
           <br />
-          <ButtonCta type="submit">Send</ButtonCta>
+          <ButtonCta type="submit" onClick={handleFormSubmit}>
+            Send
+          </ButtonCta>
         </Form>
       </FormWrapper>
     </ContactContainer>
