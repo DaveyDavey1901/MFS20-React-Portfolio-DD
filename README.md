@@ -14,7 +14,7 @@
 
 In this project we had to produce a react portfolio.  This can be used to highlight all your skills and projects with links to the live site as well as the github pages.
 
-|<img src="" width="600">| 
+|<img src="https://github.com/DaveyDavey1901/MFS20-React-Portfolio-DD/issues/1#issuecomment-1106968354" width="600">| 
 
 
 ## Installation
