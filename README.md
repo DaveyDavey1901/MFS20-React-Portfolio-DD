@@ -52,7 +52,7 @@ David Davies
 Feel free to contact me for an improvemnet ideas
 
 
-## :small_blue_diamond: License Link
+## License Link
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) Click Badge for License Details.
 
 
@@ -65,6 +65,6 @@ contact me if you have any questions about the React-Portfolio.
 
 DaveyDavey1901
 
-## :small_blue_diamond: E-mail
+##  E-mail
 
 Drop me an email at meNoIdea@mail.com if you would like to know more or would like to contribute.
