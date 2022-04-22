@@ -12,9 +12,9 @@
 
 ## Description
 
-In this project we had to produce a react portfolio.  This can be used to highlight all your skills and projects with links to the live site as well as the github pages.
+In this project we had to produce a react portfolio.  This can be used to showcase you, your skills as well as your projects.  
 
-|<img src="https://github.com/DaveyDavey1901/MFS20-React-Portfolio-DD/issues/1#issuecomment-1106968354" width="600">| 
+|<img src="https://user-images.githubusercontent.com/86046871/164814664-32b1a78d-c73c-4d33-8427-ed95148ec369.png" width="600">| 
 
 
 ## Installation
@@ -41,8 +41,6 @@ Contact - contact me through this form currently using the Formspark service. th
 Blog - this will be where i build a new tech blog to show my thoughts on all things tech.
 
 Login - this will be activated when ive create the blog to enable the abilty to interact and creat new blogs as well as set portfolio settings.
-
-
 
 
 ## Contributing People and Resources
