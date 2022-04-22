@@ -26,12 +26,11 @@ const LinkItem = styled.li`
   align-items: center;
   justify-content: center;
   text-align: center;
-  
+
   border-top: 2px solid transparent;
   transition: all 240ms ease-in-out;
   &:hover {
     border-top: 2px solid #ffdd19;
-   
   }
 `;
 
@@ -52,11 +51,7 @@ export function NavLinks(props) {
           <StyledLink to="/">Home</StyledLink>
         </LinkItem>
         <LinkItem>
-          <StyledLink to="/about">
-            About Me
-            <br />
-            Resume
-          </StyledLink>
+          <StyledLink to="/about">About Me</StyledLink>
         </LinkItem>
         <LinkItem>
           <StyledLink to="/portfolio">Portfolio</StyledLink>

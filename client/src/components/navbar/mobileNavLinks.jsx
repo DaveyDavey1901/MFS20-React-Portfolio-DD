@@ -67,7 +67,7 @@ export function MobileLinks(props) {
           </LinkItem>
           <LinkItem>
             <StyledLink to="/about">
-              About Me / Resume
+              About Me 
             </StyledLink>
           </LinkItem>
           <LinkItem>

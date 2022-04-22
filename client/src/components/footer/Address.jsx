@@ -8,9 +8,8 @@ const MyAddress = styled.div`
 
   li {
     list-style: none;
+    font-size:1.6rem;
   }
-
-  font-size: 1.6rem;
   white-space: nowrap;
   margin-right: 3.8rem;
 `;

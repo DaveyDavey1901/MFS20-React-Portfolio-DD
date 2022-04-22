@@ -18,25 +18,8 @@ const HeroText = styled.div`
   margin: 0 4rem;
 `;
 
-const BrandStatement = styled.p`
-  font-size: 1.6rem;
-  text-align: justify;
-  text-justify: inter-word;
-`;
-
 const Hlight = styled.span`
   color: #00c9fc;
-`;
-const TitleName = styled.span`
-  font-size:2.4rem;
-`;
-
-const Img = styled.img`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  max-width: 100%;
-  max-height: 100%;
 `;
 
 const ImgFrame = styled.div`
@@ -59,11 +42,11 @@ export function HeroSection() {
       <Container>
         <Flex>
           <HeroText>
-            <TitleName>
+            <h1>
               Hello I'm <Hlight>DAVID DAVIES</Hlight>
-            </TitleName>
+            </h1>
 
-            <BrandStatement>
+            <p>
               I'm a <Hlight>Front End Developer</Hlight> with drive and passion
               to deliver apps and products to the client that truly highlights
               and promotes the core of their businesses. Being ex-military, I am
@@ -73,7 +56,7 @@ export function HeroSection() {
               <br></br>
               Trained as a <Hlight>Full Stack Developer</Hlight> at Manchester
               University Boot Camp where I earned a certificate.
-            </BrandStatement>
+            </p>
 
             <ButtonCta onClick={() => navigate('/contact')}>Contact Me</ButtonCta>
             <a href="https://docs.google.com/document/d/1kf54GtaBC2gDp3jtTX_yXzQcgtsTBntTN-IeMRnBCM4/edit?usp=sharing">
@@ -81,7 +64,7 @@ export function HeroSection() {
             </a>
           </HeroText>
         <ImgFrame>
-          <Img src={DDAvatarImg} alt="David Davies" />
+          <img src={DDAvatarImg} alt="David Davies" />
         </ImgFrame>
         </Flex>
       </Container>

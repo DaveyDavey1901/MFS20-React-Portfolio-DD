@@ -4,7 +4,7 @@ import DDLogoImg from "../../Assets/Img/sphere.png";
 const LogoWrapper = styled.div`
   display: flex;
   align-items: center;
-  margin-right: 4rem;
+  margin-right: 2rem;
 `;
 
 const LogoImg = styled.div`
