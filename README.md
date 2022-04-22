@@ -59,7 +59,7 @@ Feel free to contact me for an improvemnet ideas
 
 ## Questions:
 
-contact me if you have any questions about the readme generator.
+contact me if you have any questions about the React-Portfolio.
 
 ##  GitHub Account
 
