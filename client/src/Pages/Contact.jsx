@@ -40,6 +40,16 @@ const Form = styled.form`
   background-color: rgba(7, 27, 69, 0.9);
   border-left: 1px solid #ffdd19;
 
+  img {
+    width: 100%;
+    height: 100%;
+  }
+
+  p {
+    margin: 1rem;
+    text-align: center;
+  }
+
   @media (max-width: ${({ theme }) => theme.mobile}) {
     border-top: 1px solid #ffdd19;
     border-left: none;
@@ -87,14 +97,6 @@ const Label = styled.label`
   margin-top: 1rem;
 `;
 
-const Img = styled.img`
-  width: 100%;
-  height: 100%;
-`;
-
-const P = styled.p`
-  margin: 1rem;
-`;
 const ErrorMsg = styled.p`
   color: red;
   font-size: 1.4rem;
@@ -146,13 +148,13 @@ export function Contact() {
     <ContactContainer>
       <FormWrapper>
         <TextInfo>
-          <Img src={contactmeImg} alt="mail background" />
+          <img src={contactmeImg} alt="mail background" />
           <p>Hello {userName}</p>
-          <P>
+          <p>
             Please feel free to get in touch with me if you have any questions.
-          </P>
+          </p>
 
-          <Img src={contactmeImg} alt="mail background" />
+          <img src={contactmeImg} alt="mail background" />
         </TextInfo>
 
         <Form action="https://submit-form.com/VYOGDzCJ">
