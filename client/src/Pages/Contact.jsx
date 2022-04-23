@@ -11,6 +11,11 @@ const ContactContainer = styled.div`
   justify-content: center;
   width: 100vw;
   height: 80vh;
+
+  p {
+    margin: 1rem;
+    text-align: center;
+  }
 `;
 
 const FormWrapper = styled.div`
@@ -45,11 +50,7 @@ const Form = styled.form`
     height: 100%;
   }
 
-  p {
-    margin: 1rem;
-    text-align: center;
-  }
-
+  
   @media (max-width: ${({ theme }) => theme.mobile}) {
     border-top: 1px solid #ffdd19;
     border-left: none;
@@ -100,6 +101,12 @@ const Label = styled.label`
 const ErrorMsg = styled.p`
   color: red;
   font-size: 1.4rem;
+`;
+
+const Hlight = styled.span`
+  color: #ffdd19;
+  text-decoration:none;
+  
 `;
 
 export function Contact() {
@@ -153,7 +160,14 @@ export function Contact() {
           <p>
             Please feel free to get in touch with me if you have any questions.
           </p>
-
+          
+            <p>
+              <Hlight>Address:</Hlight> Wigan, Greater Manchester, UK
+            </p>
+            <p>
+              <Hlight>My Email:</Hlight> David_Davies@mail.com
+            </p>
+         
           <img src={contactmeImg} alt="mail background" />
         </TextInfo>
 

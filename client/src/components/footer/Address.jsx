@@ -29,7 +29,7 @@ export function Address() {
           <Hlight>Address:</Hlight> Wigan, Greater Manchester, UK
         </li>
         <li>
-          <Hlight>Email:&emsp;&emsp;</Hlight> David_Davies.com
+          <Hlight>My Email:</Hlight> David_Davies@mail.com
         </li>
       </ul>
     </MyAddress>
