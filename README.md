@@ -49,7 +49,7 @@ David Davies
 
 ##  Repository Details and Link.
 
-Feel free to contact me for an improvemnet ideas
+Feel free to contact me for an improvement ideas
 
 
 ## License Link
