@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/MFS20-React-Portfolio-DD/static/css/main.89f789c6.css",
-    "main.js": "/MFS20-React-Portfolio-DD/static/js/main.72e275b7.js",
+    "main.js": "/MFS20-React-Portfolio-DD/static/js/main.db33e322.js",
     "static/js/787.c4e7f8f9.chunk.js": "/MFS20-React-Portfolio-DD/static/js/787.c4e7f8f9.chunk.js",
     "static/media/codeQuiz.png": "/MFS20-React-Portfolio-DD/static/media/codeQuiz.82647aca0fc14243d27b.png",
     "static/media/weatherapi.png": "/MFS20-React-Portfolio-DD/static/media/weatherapi.a7dc855a991e0223257e.png",
@@ -15,11 +15,11 @@
     "static/media/pwdgenerator.png": "/MFS20-React-Portfolio-DD/static/media/pwdgenerator.dc0b87bc7bb0206a00bc.png",
     "index.html": "/MFS20-React-Portfolio-DD/index.html",
     "main.89f789c6.css.map": "/MFS20-React-Portfolio-DD/static/css/main.89f789c6.css.map",
-    "main.72e275b7.js.map": "/MFS20-React-Portfolio-DD/static/js/main.72e275b7.js.map",
+    "main.db33e322.js.map": "/MFS20-React-Portfolio-DD/static/js/main.db33e322.js.map",
     "787.c4e7f8f9.chunk.js.map": "/MFS20-React-Portfolio-DD/static/js/787.c4e7f8f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.89f789c6.css",
-    "static/js/main.72e275b7.js"
+    "static/js/main.db33e322.js"
   ]
 }
