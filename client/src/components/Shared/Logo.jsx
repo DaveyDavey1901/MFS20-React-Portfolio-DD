@@ -30,7 +30,7 @@ export function Logo(props) {
       <LogoImg>
         <img src={DDLogoImg} alt="Davids Logo" />
       </LogoImg>
-      <LogoText>David Davies <br /> Portfolio</LogoText>
+      <LogoText>David Davies Portfolio</LogoText>
     </LogoWrapper>
   );
 }

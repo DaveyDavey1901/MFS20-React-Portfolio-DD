@@ -25,25 +25,25 @@ const NavbarMiddle = styled.div`
   flex: 2;
   height: 100%;
   justify-content: center;
-  margin-right: 2rem;
-`;
+
+ `;
 const NavbarRight = styled.div`
   display: flex;
   margin: 4rem;
 `;
 
 export function Navbar(props) {
-  const isMobile = useMediaQuery({ maxWidth: ThemeSize.mobile });
+  const isTablet = useMediaQuery({ maxWidth: ThemeSize.tablet });
 
   return (
     <NavbarContainer>
       <NavbarLeft>
         <Logo />
       </NavbarLeft>
-      <NavbarMiddle>{!isMobile && <NavLinks />}</NavbarMiddle>
+      <NavbarMiddle>{!isTablet && <NavLinks />}</NavbarMiddle>
       <NavbarRight>
-        {!isMobile && <Login />}
-        {isMobile && <MobileLinks />}
+        {!isTablet && <Login />}
+        {isTablet && <MobileLinks />}
       </NavbarRight>
     </NavbarContainer>
   );

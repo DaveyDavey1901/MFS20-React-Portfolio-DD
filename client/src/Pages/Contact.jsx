@@ -157,7 +157,7 @@ export function Contact() {
           <img src={contactmeImg} alt="mail background" />
         </TextInfo>
 
-        <Form action="https://submit-form.com/VYOGDzCJ">
+        <Form action="https://submit-form.com/VYOGDzCJ" autocomplete="on">
           <Label htmlFor="userName">Name</Label>
           <Input
             value={userName}

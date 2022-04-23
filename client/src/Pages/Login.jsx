@@ -6,8 +6,12 @@ const ContactContainer = styled.div`
   align-items: center;
   text-align: center;
   justify-content: center;
-  width: 100vw;
-  height: 80vh;
+  height: 70vh;
+  margin:auto;
+
+  h2{
+    text-align:center;
+     }
 `;
 
 const Form = styled.form`
@@ -20,38 +24,33 @@ const Form = styled.form`
   background-color: rgba(7, 27, 69, 0.9);
   border: 1px solid #ffdd19;
   border-radius: 12px;
-  height: 30vh;
-  width: 25vw;
-`;
+  width: 30rem;
 
-const Input = styled.input`
-  border: 2px solid #fff;
+  input{
+  border: 1px solid #000;
   outline: none;
   background-color: #fff;
-  padding: 0.5rem 1rem;
-  font-size: 1.1rem;
+  padding: 1rem;
+  font-size: 1.2rem;
   transition: 0.3s;
   border-radius: 8px;
-  margin-bottom: -1rem;
-`;
+    }
+`
 
 const Label = styled.label`
   color: #ffdd19;
   margin-top: 1rem;
 `;
 
-const P = styled.p`
-  margin: 1rem;
-  text-align: center;
-`;
 export function Login() {
   return (
     <ContactContainer>
-      
-      <Form>
-        <P>Welcome Back <br /> Time to get to work!</P>
+      <Form autocomplete="on">
+        <h2>
+          Welcome Back <br /> Time to get to work!
+        </h2>
         <Label htmlFor="email">Email</Label>
-        <Input
+        <input
           type="email"
           id="email"
           name="email"
@@ -59,7 +58,7 @@ export function Login() {
           required=""
         />
         <Label htmlFor="password">Password</Label>
-        <Input
+        <input
           type="password"
           id="password"
           name="password"

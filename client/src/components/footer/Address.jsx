@@ -12,6 +12,8 @@ const MyAddress = styled.div`
   }
   white-space: nowrap;
   margin-right: 3.8rem;
+  
+  
 `;
 
 const Hlight = styled.span`
@@ -24,10 +26,10 @@ export function Address() {
     <MyAddress>
       <ul>
         <li>
-          <Hlight>Address:</Hlight> Wigan, Greater Manchester, United Kingdom
+          <Hlight>Address:</Hlight> Wigan, Greater Manchester, UK
         </li>
         <li>
-          <Hlight>Email:</Hlight> David_Davies.com
+          <Hlight>Email:&emsp;&emsp;</Hlight> David_Davies.com
         </li>
       </ul>
     </MyAddress>

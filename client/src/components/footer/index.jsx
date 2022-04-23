@@ -13,11 +13,16 @@ const FooterContainer = styled.div`
   left: 0;
   bottom: 0;
   right: 0;
+  
 `;
 
 const FooterLeft = styled.div`
   display: flex;
   margin-right: 4rem;
+  
+  @media (max-width: ${({ theme }) => theme.mobile}) {
+   display:none;
+  }
 `;
 const FooterMiddle = styled.div`
   display: flex;
