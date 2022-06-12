@@ -28,7 +28,7 @@ const content = [
     tech: "HTML, CSS, JavaScript, Tailwind CSS",
     image: "safehome.png",
     liveLink: "https://daveydavey1901.github.io/Safe-Home/",
-    githubLink: "https://daveydavey1901.github.io/Safe-Home/",
+    githubLink: "https://github.com/DaveyDavey1901/Safe-Home",
   },
   {
     id: 4,
@@ -37,7 +37,7 @@ const content = [
     tech: "HTML, CSS, JavaScript",
     image: "codeQuiz.png",
     liveLink: "https://daveydavey1901.github.io/timedCodeQuiz/",
-    githubLink: "https://daveydavey1901.github.io/timedCodeQuiz/",
+    githubLink: "https://github.com/DaveyDavey1901/timedCodeQuiz",
   },
   {
     id: 5,
@@ -46,7 +46,7 @@ const content = [
     tech: "HTML, CSS, JavaScript",
     image: "pwdgenerator.png",
     liveLink: "https://daveydavey1901.github.io/randPassGenerator/",
-    githubLink: "https://daveydavey1901.github.io/randPassGenerator/",
+    githubLink: "https://github.com/DaveyDavey1901/randPassGenerator",
   },
   {
     id: 6,
@@ -55,7 +55,7 @@ const content = [
     tech: "HTML, CSS, JavaScript",
     image: "weatherapi.png",
     liveLink: "https://daveydavey1901.github.io/WeatherDB/",
-    githubLink: "https://daveydavey1901.github.io/WeatherDB/",
+    githubLink: "https://github.com/DaveyDavey1901/WeatherDB",
   },
 ];
 
