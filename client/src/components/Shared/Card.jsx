@@ -23,7 +23,7 @@ const ProjectInfo = styled.div`
   border: 1px solid #ffdd19;
   border-radius: 12px;
   padding: 1rem;
-  height:15rem;
+  height:20rem;
   margin: 1rem;
   
   h2{
@@ -42,21 +42,24 @@ const ImgFrame = styled.div`
   width: auto;
 `;
 
+const Hlight = styled.span`
+  text-align: center;
+  color: #ffdd19;
+  margin-left: 1rem;
+ `;
 
 
-export function Card({ item: { id, title, body, image, liveLink, githubLink,figma} }) {
+export function Card({ item: { id, title, body, image, liveLink, githubLink,figma,tech} }) {
   return (
     <StyledCard>
       <ProjectInfo>
         <h2>{title}</h2>
+        <p>Tech:<Hlight>{tech}</Hlight></p>
         <p>{body}</p>
+        
       </ProjectInfo>
       <ImgFrame>
-        <img
-          src={require(`../../Assets/Img/${image}`)}
-          alt=""
-          
-        />
+        <img src={require(`../../Assets/Img/${image}`)} alt="" />
       </ImgFrame>
       <div>
         <a href={liveLink}>
@@ -64,6 +67,9 @@ export function Card({ item: { id, title, body, image, liveLink, githubLink,figm
         </a>
         <a href={githubLink}>
           <Button>GitHub</Button>
+        </a>
+        <a href={figma}>
+          <Button>Figma</Button>
         </a>
       </div>
     </StyledCard>

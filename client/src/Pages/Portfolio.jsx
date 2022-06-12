@@ -30,7 +30,7 @@ export function Portfolio() {
       <PageHeading
         title={"Projects"}
         pageDetails={
-          <Hlight>Browse all currently completed projects as well as those that are in development.</Hlight>
+          <Hlight>Browse all currently completed projects as well as those that are in development. Not all are Live and some do not have a figma design</Hlight>
         }
       />
      
