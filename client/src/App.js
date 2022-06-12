@@ -8,7 +8,7 @@ import { Footer } from "./components/footer";
 import { Home } from "./Pages/Homepage";
 import { AboutMe } from "./Pages/AboutMe";
 import { Portfolio } from "./Pages/Portfolio";
-import { Contact } from "./Pages/Contact";
+import { ContactForm } from "./Pages/contactForm";
 import { Blog } from "./Pages/Blog";
 import { Login} from "./Pages/Login";
 
@@ -24,7 +24,7 @@ function App() {
           <Route path="/*" element={<Home />} />
           <Route path="/about" element={<AboutMe />} />
           <Route path="/portfolio" element={<Portfolio />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/contact" element={<ContactForm />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/login" element={<Login />} />
         </Routes>
